@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amusa Abisola Bukola | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Amusa Abisola Bukola</div>
+    <button type="button" id="menu-button" class="menu-button" aria-expanded="false" aria-controls="menu-list">Menu</button>
+    <nav aria-label="Main navigation">
+      <ul id="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Me</h1>
+
+    <section>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <p class="error" id="nameError"></p>
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" autocomplete="email">
+        <p class="error" id="emailError"></p>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" inputmode="numeric" autocomplete="tel">
+        <p class="error" id="phoneError"></p>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5"></textarea>
+        <p class="error" id="messageError"></p>
+
+        <button type="submit">Send Message</button>
+        <p class="success" id="successMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Amusa Abisola Bukola | Miva Open University. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

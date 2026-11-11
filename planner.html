@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amusa Abisola Bukola | Academic Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Amusa Abisola Bukola</div>
+    <button type="button" id="menu-button" class="menu-button" aria-expanded="false" aria-controls="menu-list">Menu</button>
+    <nav aria-label="Main navigation">
+      <ul id="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active" aria-current="page">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Academic Planner</h1>
+
+    <section>
+      <h2 id="formHeading">Add a task</h2>
+      <form id="taskForm" novalidate>
+        <label for="taskInput">Task</label>
+        <input type="text" id="taskInput" placeholder="e.g. Revise networking notes" maxlength="100">
+
+        <label for="courseInput">Course (optional)</label>
+        <input type="text" id="courseInput" placeholder="e.g. CYB 101" maxlength="30">
+
+        <label for="dueInput">Due date (optional)</label>
+        <input type="date" id="dueInput">
+
+        <p class="error" id="taskError" role="alert"></p>
+
+        <button type="submit" id="addBtn">Add Task</button>
+        <button type="button" id="cancelBtn" class="btn-secondary" hidden>Cancel edit</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>My Tasks</h2>
+      <p id="taskSummary" aria-live="polite"></p>
+
+      <div class="filters" role="group" aria-label="Filter tasks">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="active">Pending</button>
+        <button type="button" class="filter-btn" data-filter="done">Completed</button>
+      </div>
+
+      <ul id="taskList"></ul>
+      <p id="emptyMsg" class="note">No tasks yet. Add your first one above.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Amusa Abisola Bukola | Miva Open University. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

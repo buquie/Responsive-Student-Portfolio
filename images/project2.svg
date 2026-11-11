@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
+  <title>Password strength checker</title>
+  <rect width="300" height="180" fill="#3f2a8c"/>
+  <rect x="40" y="35" width="220" height="40" rx="6" fill="#ffffff"/>
+  <text x="55" y="61" font-family="Arial" font-size="20" fill="#222222">●●●●●●●●●●●●</text>
+  <rect x="40" y="95" width="220" height="16" rx="8" fill="#d9d4ef"/>
+  <rect x="40" y="95" width="190" height="16" rx="8" fill="#1a7f37"/>
+  <text x="150" y="140" font-family="Arial" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">Strength: Strong</text>
+</svg>
